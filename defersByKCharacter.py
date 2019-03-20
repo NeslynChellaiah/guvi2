@@ -9,7 +9,6 @@ class main:
         for i in range (0,l):
             if e1[i]!=e2[i]:
                 count+=1
-                print(count)
         if count==K:
             print("yes")
         else:
