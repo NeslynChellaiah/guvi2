@@ -1,14 +1,15 @@
 class main:
     def func(self):
         e1,e2,K = input().split()
-        e1=[x for x in e1.split()]
-        e2=[x for x in e2.split()]
+        K = int(K)
+        e1=list(e1)
+        e2=list(e2)
         count = 0
-        for item in e1:
-            if item in e2:
-                return
-            else:
-                count += 1
+        l = len(e1)
+        for i in range (0,l):
+            if e1[i]!=e2[i]:
+                count+=1
+                print(count)
         if count==K:
             print("yes")
         else:
